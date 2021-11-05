@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Restaurant Admin</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="" type="image/gif" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e422e8ad98.js" crossorigin="anonymous"></script>
+
+    <!-- Flag Icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+        type="text/css">
+
+    <!-- Morris Chart -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/admin-overview.css">
+</head>
+
+<body class="dark-blue-bg text-white">
+    <!-- Main -->
+    <main>
+        <div class="dashboard">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
+                <!-- Side Bar -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                    <div class="card h-100 bg-transparent border-0">
+                        <!-- Logo -->
+                        <h1 class="fs-3 fst-italic text-center">
+                            <span class="blue-text">Qp</span>tradings
+                        </h1>
+
+                        <!-- Items -->
+                        <div class="mt-5">
+                            <ul class="nav flex-column">
+                                <!-- Admin Overview -->
+                                <li class="nav-item p-1 side-item-active mb-3">
+                                    <a href="index.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-chart-pie dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Admin Overview</span>
+                                    </a>
+                                </li>
+
+                                <!-- User Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="user-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-user-friends dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>User Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Deposit Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="deposit-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-wallet dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Deposit Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Withdraw Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="withdraw-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-money-bill-wave dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Withdraw Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Finance Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="finance-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-database dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Finance Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Profile & Security -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="profile-security.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-user-lock dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Profile & Security</span>
+                                    </a>
+                                </li>
+
+                                <!-- Quote Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="quote-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-quote-left dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Quote Management</span>
+                                    </a>
+                                </li>
+
+                                <!-- Beneficiary Management -->
+                                <li class="nav-item p-1 mb-3">
+                                    <a href="beneficiary-management.html"
+                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
+
+                                        <i class="fas fa-users dark-silver-text fs-5 side-icon me-4"></i>
+                                        <span>Beneficiary Management</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Language -->
+                        <div class="dropdown mt-4">
+                            <button
+                                class="btn bg-white dropdown-toggle w-100 d-flex justify-content-between align-items-center language-btn"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <div>
+                                    <span class="flag-icon flag-icon-us"></span>
+                                    <span>English</span>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <div class="dropdown-item">
+                                        <span class="flag-icon flag-icon-us"></span>
+                                        English
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Logout -->
+                        <button
+                            class="btn btn-primary blue-bg d-flex justify-content-center align-items-center logout-btn mt-4">
+                            <i class="fas fa-sign-out-alt fs-5 me-2"></i>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                    <div class="card h-100 bg-transparent border-0">
+                        <!-- Header -->
+                        <div>
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-0 mb-4">
+                                <div class="container-fluid px-0">
+                                    <!-- Mode -->
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <i class="fas fa-sun dark-silver-text me-2"></i>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                                checked />
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">
+                                                <i class="fas fa-moon"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <!-- User -->
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <!-- User For Desktop View -->
+                                        <div
+                                            class="user-desktop-view d-flex justify-content-start align-items-center ms-auto">
+                                            <!-- Search -->
+                                            <button class="search-click-btn btn me-0">
+                                                <input type="text"
+                                                    class="search-click bg-transparent border-0 text-white" name=""
+                                                    placeholder="Search" />
+                                                <i class="fas fa-search blue-text me-1"></i>
+                                            </button>
+
+                                            <a href="#" class="text-decoration-none text-white">
+                                                <i class="fas fa-bell position-relative blue-text me-4">
+                                                    <span
+                                                        class="position-absolute top-0 start-100 translate-middle rounded-circle yellow-bg notification-badge">
+                                                        <span class="visually-hidden">New alerts</span>
+                                                    </span>
+                                                </i>
+                                            </a>
+
+                                            <a href="#" class="text-decoration-none text-white">
+                                                <h6 class="me-4">
+                                                    <span class="blue-text">Hello,</span>
+                                                    <span>Cristiano</span>
+                                                </h6>
+                                            </a>
+
+                                            <a href="#" class="text-decoration-none text-white">
+                                                <img src="images/profile-picture.jpg" class="img-fluid profile-picture"
+                                                    alt="profile picture">
+                                            </a>
+                                        </div>
+
+                                        <!-- User For Mobile And Tablet View -->
+                                        <ul class="user-mobile-tablet-view navbar-nav me-auto mb-2 mb-lg-0 mt-3">
+                                            <li class="nav-item">
+                                                <div class="nav-link">
+                                                    <input class="form-control text-center" type="text"
+                                                        placeholder="Search">
+                                                </div>
+                                            </li>
+
+                                            <li class="nav-item text-center">
+                                                <a href="#" class="nav-link text-decoration-none text-white">
+                                                    <i class="fas fa-bell position-relative blue-text">
+                                                        <span
+                                                            class="position-absolute top-0 start-100 translate-middle rounded-circle yellow-bg notification-badge">
+                                                            <span class="visually-hidden">New alerts</span>
+                                                        </span>
+                                                    </i>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item text-center">
+                                                <a href="#" class="nav-link text-decoration-none text-white">
+                                                    <h6 class="">
+                                                        <span class="blue-text">Hello,</span>
+                                                        <span>Cristiano</span>
+                                                    </h6>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item text-center">
+                                                <a href="#" class="nav-link text-decoration-none text-white">
+                                                    <img src="images/profile-picture.jpg"
+                                                        class="img-fluid profile-picture" alt="profile picture">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="mb-4">
+                                <h4>Dashboard</h4>
+                                <p class="silver-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                                    rem!</p>
+                            </div>
+                        </div>
+
+                        <!-- Admin Overview Content -->
+                        <div>
+                            <!-- Amount Section -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-3 mb-3">
+                                <!-- Current Balance -->
+                                <div class="col">
+                                    <div class="card h-100 light-blue-bg border-0 square-radius">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex justify-content-around">
+                                                <div class="text-center">
+                                                    <i class="fas fa-money-bill-wave blue-bg p-2 square-radius"></i>
+                                                </div>
+
+                                                <div>
+                                                    <h5 class="card-title fs-6 mb-0">
+                                                        Current Balance
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <small class="silver-text small-text">
+                                                            as of 10 Jan 2021
+                                                        </small>
+                                                    <h4>$15,125.78</h4>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Current Profit -->
+                                <div class="col">
+                                    <div class="card h-100 light-blue-bg border-0 square-radius">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex justify-content-around">
+                                                <div class="text-center">
+                                                    <i class="fas fa-upload blue-bg p-2 square-radius"></i>
+                                                </div>
+
+                                                <div>
+                                                    <h5 class="card-title fs-6 mb-0">
+                                                        Current Profit
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <small class="silver-text small-text">
+                                                            as of 10 Jan 2021
+                                                        </small>
+                                                    <h4>$758.21</h4>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Last Withdrawal -->
+                                <div class="col">
+                                    <div class="card h-100 light-blue-bg border-0 square-radius">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex justify-content-around">
+                                                <div class="text-center">
+                                                    <i class="fas fa-money-bill-wave blue-bg p-2 square-radius"></i>
+                                                </div>
+
+                                                <div>
+                                                    <h5 class="card-title fs-6 mb-0">
+                                                        Last Withdrawal
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <small class="silver-text small-text">
+                                                            as of 10 Jan 2021
+                                                        </small>
+                                                    <h4>$1,235.87</h4>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Last Deposit -->
+                                <div class="col">
+                                    <div class="card h-100 light-blue-bg border-0 square-radius">
+                                        <div class="card-body pb-0">
+                                            <div class="d-flex justify-content-around">
+                                                <div class="text-center">
+                                                    <i class="fas fa-wallet blue-bg p-2 square-radius"></i>
+                                                </div>
+
+                                                <div>
+                                                    <h5 class="card-title fs-6 mb-0">
+                                                        Last Deposit
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        <small class="silver-text small-text">
+                                                            as of 10 Jan 2021
+                                                        </small>
+                                                    <h4>$5,125.78</h4>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Details Section -->
+                            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-3 g-3 mb-3">
+                                <!-- Overview -->
+                                <div class="col overview">
+                                    <div class="card h-100 light-blue-bg square-radius">
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-5 mb-3">Overview</h5>
+
+                                            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-2 mb-3">
+                                                <div class="col">
+                                                    <select class="form-select fs-6 bg-transparent text-white"
+                                                        aria-label="Default select example">
+                                                        <option class="light-blue-bg" selected>Comodities</option>
+                                                        <option class="light-blue-bg" value="1">One</option>
+                                                        <option class="light-blue-bg" value="2">Two</option>
+                                                        <option class="light-blue-bg" value="3">Three</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col">
+                                                    <select class="form-select fs-6 bg-transparent text-white"
+                                                        aria-label="Default select example">
+                                                        <option class="light-blue-bg" selected>This Month</option>
+                                                        <option class="light-blue-bg" value="1">One</option>
+                                                        <option class="light-blue-bg" value="2">Two</option>
+                                                        <option class="light-blue-bg" value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row row-cols-1 row-cols-sm-3 g-3">
+                                                <!-- Info -->
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0">ES1!</h6>
+                                                    <p class="small-text">E-Mini S&P</p>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mt-2">
+                                                        3762.25<sup class="super-text">E</sup>
+                                                    </h6>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0 red-text">
+                                                        -0.76%
+                                                    </h6>
+                                                    <p class="dark-red-text">-29.00</p>
+                                                </div>
+
+                                                <!-- Info -->
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0">ES1!</h6>
+                                                    <p class="small-text">E-Mini S&P</p>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mt-2">
+                                                        3762.25<sup class="super-text">E</sup>
+                                                    </h6>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0 red-text">
+                                                        -0.76%
+                                                    </h6>
+                                                    <p class="dark-red-text">-29.00</p>
+                                                </div>
+
+                                                <!-- Info -->
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0">ES1!</h6>
+                                                    <p class="small-text">E-Mini S&P</p>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mt-2">
+                                                        3762.25<sup class="super-text">E</sup>
+                                                    </h6>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0 red-text">
+                                                        -0.76%
+                                                    </h6>
+                                                    <p class="dark-red-text">-29.00</p>
+                                                </div>
+
+                                                <!-- Info -->
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0">ES1!</h6>
+                                                    <p class="small-text">E-Mini S&P</p>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mt-2">
+                                                        3762.25<sup class="super-text">E</sup>
+                                                    </h6>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0 red-text">
+                                                        -0.76%
+                                                    </h6>
+                                                    <p class="dark-red-text">-29.00</p>
+                                                </div>
+
+                                                <!-- Info -->
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0">ES1!</h6>
+                                                    <p class="small-text">E-Mini S&P</p>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mt-2">
+                                                        3762.25<sup class="super-text">E</sup>
+                                                    </h6>
+                                                </div>
+
+                                                <div class="col">
+                                                    <h6 class="fs-6 mb-0 red-text">
+                                                        -0.76%
+                                                    </h6>
+                                                    <p class="dark-red-text">-29.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Analytics -->
+                                <div class="col">
+                                    <div class="card h-100 light-blue-bg square-radius">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="card-title fs-5 mb-3">Analytics</h5>
+                                                <h6 class="card-title small-text mb-3">ES1</h6>
+                                            </div>
+
+                                            <!-- Chart -->
+                                            <div class="text-center mt-5">
+                                                <div id="chart" class="w-100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- IP Log -->
+                                <div class="col">
+                                    <div class="card h-100 light-blue-bg square-radius">
+                                        <div class="card-body">
+                                            <h5 class="card-title fs-5 mb-3">IP Log</h5>
+
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <small class="small-text silver-text fst-italic">DATE/TIME</small>
+                                                <small class="small-text silver-text fst-italic">IP ADDRESS</small>
+                                            </div>
+
+                                            <div>
+                                                <!-- Item -->
+                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
+                                                    <div class="d-flex justify-content-between ">
+                                                        <div>
+                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
+                                                            <small class="small-text yellow-text">
+                                                                22:26:05 GMT(+1)
+                                                            </small>
+                                                        </div>
+
+                                                        <h6 class="fs-6">103.217.111.167</h6>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item -->
+                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
+                                                    <div class="d-flex justify-content-between ">
+                                                        <div>
+                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
+                                                            <small class="small-text yellow-text">
+                                                                22:26:05 GMT(+1)
+                                                            </small>
+                                                        </div>
+
+                                                        <h6 class="fs-6">103.217.111.167</h6>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item -->
+                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
+                                                    <div class="d-flex justify-content-between ">
+                                                        <div>
+                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
+                                                            <small class="small-text yellow-text">
+                                                                22:26:05 GMT(+1)
+                                                            </small>
+                                                        </div>
+
+                                                        <h6 class="fs-6">103.217.111.167</h6>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item -->
+                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
+                                                    <div class="d-flex justify-content-between ">
+                                                        <div>
+                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
+                                                            <small class="small-text yellow-text">
+                                                                22:26:05 GMT(+1)
+                                                            </small>
+                                                        </div>
+
+                                                        <h6 class="fs-6">103.217.111.167</h6>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Item -->
+                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
+                                                    <div class="d-flex justify-content-between ">
+                                                        <div>
+                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
+                                                            <small class="small-text yellow-text">
+                                                                22:26:05 GMT(+1)
+                                                            </small>
+                                                        </div>
+
+                                                        <h6 class="fs-6">103.217.111.167</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- External Script -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/admin-overview.js"></script>
+</body>
+
+</html>
