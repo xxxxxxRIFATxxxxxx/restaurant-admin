@@ -6,625 +6,511 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Title -->
-    <title>Restaurant Admin</title>
+    <meta name="description" content="Admin Dashboard" />
+    <meta name="keywords" content="Admin, Dashboard" />
+    <meta name="author" content="Md. Rifat Islam" />
+    <title>Admin Dashboard</title>
 
     <!-- Fav Icon -->
-    <link rel="icon" href="" type="image/gif" />
+    <link rel="icon" href="images/favicon.png" type="image/gif" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e422e8ad98.js" crossorigin="anonymous"></script>
 
-    <!-- Flag Icon -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
-        type="text/css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Morris Chart -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/admin-overview.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="dark-blue-bg text-white">
-    <!-- Main -->
-    <main>
-        <div class="dashboard">
-            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
-                <!-- Side Bar -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                    <div class="card h-100 bg-transparent border-0">
-                        <!-- Logo -->
-                        <h1 class="fs-3 fst-italic text-center">
-                            <span class="blue-text">Qp</span>tradings
-                        </h1>
-
-                        <!-- Items -->
-                        <div class="mt-5">
-                            <ul class="nav flex-column">
-                                <!-- Admin Overview -->
-                                <li class="nav-item p-1 side-item-active mb-3">
-                                    <a href="index.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
-
-                                        <i class="fas fa-chart-pie dark-silver-text fs-5 side-icon me-4"></i>
-                                        <span>Admin Overview</span>
-                                    </a>
-                                </li>
-
-                                <!-- User Management -->
-                                <li class="nav-item p-1 mb-3">
-                                    <a href="user-management.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
-
-                                        <i class="fas fa-user-friends dark-silver-text fs-5 side-icon me-4"></i>
-                                        <span>User Management</span>
-                                    </a>
-                                </li>
-
-                                <!-- Deposit Management -->
-                                <li class="nav-item p-1 mb-3">
-                                    <a href="deposit-management.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
-
-                                        <i class="fas fa-wallet dark-silver-text fs-5 side-icon me-4"></i>
-                                        <span>Deposit Management</span>
-                                    </a>
-                                </li>
-
-                                <!-- Withdraw Management -->
-                                <li class="nav-item p-1 mb-3">
-                                    <a href="withdraw-management.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
-
-                                        <i class="fas fa-money-bill-wave dark-silver-text fs-5 side-icon me-4"></i>
-                                        <span>Withdraw Management</span>
-                                    </a>
-                                </li>
-
-                                <!-- Finance Management -->
-                                <li class="nav-item p-1 mb-3">
-                                    <a href="finance-management.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
-
-                                        <i class="fas fa-database dark-silver-text fs-5 side-icon me-4"></i>
-                                        <span>Finance Management</span>
-                                    </a>
-                                </li>
-
-                                <!-- Profile & Security -->
-                                <li class="nav-item p-1 mb-3">
-                                    <a href="profile-security.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
-
-                                        <i class="fas fa-user-lock dark-silver-text fs-5 side-icon me-4"></i>
-                                        <span>Profile & Security</span>
-                                    </a>
-                                </li>
-
-                                <!-- Quote Management -->
-                                <li class="nav-item p-1 mb-3">
-                                    <a href="quote-management.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
-
-                                        <i class="fas fa-quote-left dark-silver-text fs-5 side-icon me-4"></i>
-                                        <span>Quote Management</span>
-                                    </a>
-                                </li>
-
-                                <!-- Beneficiary Management -->
-                                <li class="nav-item p-1 mb-3">
-                                    <a href="beneficiary-management.html"
-                                        class="nav-link dark-silver-text d-flex justify-content-start align-items-center side-bar-icon">
-
-                                        <i class="fas fa-users dark-silver-text fs-5 side-icon me-4"></i>
-                                        <span>Beneficiary Management</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Language -->
-                        <div class="dropdown mt-4">
-                            <button
-                                class="btn bg-white dropdown-toggle w-100 d-flex justify-content-between align-items-center language-btn"
-                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-
-                                <div>
-                                    <span class="flag-icon flag-icon-us"></span>
-                                    <span>English</span>
-                                </div>
-                            </button>
-                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
-                                <li>
-                                    <div class="dropdown-item">
-                                        <span class="flag-icon flag-icon-us"></span>
-                                        English
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Logout -->
-                        <button
-                            class="btn btn-primary blue-bg d-flex justify-content-center align-items-center logout-btn mt-4">
-                            <i class="fas fa-sign-out-alt fs-5 me-2"></i>
-                            <span>Logout</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Content -->
-                <div class="col-12 col-sm-12 col-md-12 col-lg-9">
-                    <div class="card h-100 bg-transparent border-0">
-                        <!-- Header -->
-                        <div>
-                            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-0 mb-4">
-                                <div class="container-fluid px-0">
-                                    <!-- Mode -->
-                                    <div class="d-flex justify-content-start align-items-center">
-                                        <i class="fas fa-sun dark-silver-text me-2"></i>
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
-                                                checked />
-                                            <label class="form-check-label" for="flexSwitchCheckChecked">
-                                                <i class="fas fa-moon"></i>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-
-                                    <!-- User -->
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <!-- User For Desktop View -->
-                                        <div
-                                            class="user-desktop-view d-flex justify-content-start align-items-center ms-auto">
-                                            <!-- Search -->
-                                            <button class="search-click-btn btn me-0">
-                                                <input type="text"
-                                                    class="search-click bg-transparent border-0 text-white" name=""
-                                                    placeholder="Search" />
-                                                <i class="fas fa-search blue-text me-1"></i>
-                                            </button>
-
-                                            <a href="#" class="text-decoration-none text-white">
-                                                <i class="fas fa-bell position-relative blue-text me-4">
-                                                    <span
-                                                        class="position-absolute top-0 start-100 translate-middle rounded-circle yellow-bg notification-badge">
-                                                        <span class="visually-hidden">New alerts</span>
-                                                    </span>
-                                                </i>
-                                            </a>
-
-                                            <a href="#" class="text-decoration-none text-white">
-                                                <h6 class="me-4">
-                                                    <span class="blue-text">Hello,</span>
-                                                    <span>Cristiano</span>
-                                                </h6>
-                                            </a>
-
-                                            <a href="#" class="text-decoration-none text-white">
-                                                <img src="images/profile-picture.jpg" class="img-fluid profile-picture"
-                                                    alt="profile picture">
-                                            </a>
-                                        </div>
-
-                                        <!-- User For Mobile And Tablet View -->
-                                        <ul class="user-mobile-tablet-view navbar-nav me-auto mb-2 mb-lg-0 mt-3">
-                                            <li class="nav-item">
-                                                <div class="nav-link">
-                                                    <input class="form-control text-center" type="text"
-                                                        placeholder="Search">
-                                                </div>
-                                            </li>
-
-                                            <li class="nav-item text-center">
-                                                <a href="#" class="nav-link text-decoration-none text-white">
-                                                    <i class="fas fa-bell position-relative blue-text">
-                                                        <span
-                                                            class="position-absolute top-0 start-100 translate-middle rounded-circle yellow-bg notification-badge">
-                                                            <span class="visually-hidden">New alerts</span>
-                                                        </span>
-                                                    </i>
-                                                </a>
-                                            </li>
-
-                                            <li class="nav-item text-center">
-                                                <a href="#" class="nav-link text-decoration-none text-white">
-                                                    <h6 class="">
-                                                        <span class="blue-text">Hello,</span>
-                                                        <span>Cristiano</span>
-                                                    </h6>
-                                                </a>
-                                            </li>
-
-                                            <li class="nav-item text-center">
-                                                <a href="#" class="nav-link text-decoration-none text-white">
-                                                    <img src="images/profile-picture.jpg"
-                                                        class="img-fluid profile-picture" alt="profile picture">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-
-                            <div class="mb-4">
-                                <h4>Dashboard</h4>
-                                <p class="silver-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                                    rem!</p>
-                            </div>
-                        </div>
-
-                        <!-- Admin Overview Content -->
-                        <div>
-                            <!-- Amount Section -->
-                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-3 mb-3">
-                                <!-- Current Balance -->
-                                <div class="col">
-                                    <div class="card h-100 light-blue-bg border-0 square-radius">
-                                        <div class="card-body pb-0">
-                                            <div class="d-flex justify-content-around">
-                                                <div class="text-center">
-                                                    <i class="fas fa-money-bill-wave blue-bg p-2 square-radius"></i>
-                                                </div>
-
-                                                <div>
-                                                    <h5 class="card-title fs-6 mb-0">
-                                                        Current Balance
-                                                    </h5>
-                                                    <p class="card-text">
-                                                        <small class="silver-text small-text">
-                                                            as of 10 Jan 2021
-                                                        </small>
-                                                    <h4>$15,125.78</h4>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Current Profit -->
-                                <div class="col">
-                                    <div class="card h-100 light-blue-bg border-0 square-radius">
-                                        <div class="card-body pb-0">
-                                            <div class="d-flex justify-content-around">
-                                                <div class="text-center">
-                                                    <i class="fas fa-upload blue-bg p-2 square-radius"></i>
-                                                </div>
-
-                                                <div>
-                                                    <h5 class="card-title fs-6 mb-0">
-                                                        Current Profit
-                                                    </h5>
-                                                    <p class="card-text">
-                                                        <small class="silver-text small-text">
-                                                            as of 10 Jan 2021
-                                                        </small>
-                                                    <h4>$758.21</h4>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Last Withdrawal -->
-                                <div class="col">
-                                    <div class="card h-100 light-blue-bg border-0 square-radius">
-                                        <div class="card-body pb-0">
-                                            <div class="d-flex justify-content-around">
-                                                <div class="text-center">
-                                                    <i class="fas fa-money-bill-wave blue-bg p-2 square-radius"></i>
-                                                </div>
-
-                                                <div>
-                                                    <h5 class="card-title fs-6 mb-0">
-                                                        Last Withdrawal
-                                                    </h5>
-                                                    <p class="card-text">
-                                                        <small class="silver-text small-text">
-                                                            as of 10 Jan 2021
-                                                        </small>
-                                                    <h4>$1,235.87</h4>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Last Deposit -->
-                                <div class="col">
-                                    <div class="card h-100 light-blue-bg border-0 square-radius">
-                                        <div class="card-body pb-0">
-                                            <div class="d-flex justify-content-around">
-                                                <div class="text-center">
-                                                    <i class="fas fa-wallet blue-bg p-2 square-radius"></i>
-                                                </div>
-
-                                                <div>
-                                                    <h5 class="card-title fs-6 mb-0">
-                                                        Last Deposit
-                                                    </h5>
-                                                    <p class="card-text">
-                                                        <small class="silver-text small-text">
-                                                            as of 10 Jan 2021
-                                                        </small>
-                                                    <h4>$5,125.78</h4>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details Section -->
-                            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-3 g-3 mb-3">
-                                <!-- Overview -->
-                                <div class="col overview">
-                                    <div class="card h-100 light-blue-bg square-radius">
-                                        <div class="card-body">
-                                            <h5 class="card-title fs-5 mb-3">Overview</h5>
-
-                                            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-2 mb-3">
-                                                <div class="col">
-                                                    <select class="form-select fs-6 bg-transparent text-white"
-                                                        aria-label="Default select example">
-                                                        <option class="light-blue-bg" selected>Comodities</option>
-                                                        <option class="light-blue-bg" value="1">One</option>
-                                                        <option class="light-blue-bg" value="2">Two</option>
-                                                        <option class="light-blue-bg" value="3">Three</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="col">
-                                                    <select class="form-select fs-6 bg-transparent text-white"
-                                                        aria-label="Default select example">
-                                                        <option class="light-blue-bg" selected>This Month</option>
-                                                        <option class="light-blue-bg" value="1">One</option>
-                                                        <option class="light-blue-bg" value="2">Two</option>
-                                                        <option class="light-blue-bg" value="3">Three</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="row row-cols-1 row-cols-sm-3 g-3">
-                                                <!-- Info -->
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0">ES1!</h6>
-                                                    <p class="small-text">E-Mini S&P</p>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mt-2">
-                                                        3762.25<sup class="super-text">E</sup>
-                                                    </h6>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0 red-text">
-                                                        -0.76%
-                                                    </h6>
-                                                    <p class="dark-red-text">-29.00</p>
-                                                </div>
-
-                                                <!-- Info -->
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0">ES1!</h6>
-                                                    <p class="small-text">E-Mini S&P</p>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mt-2">
-                                                        3762.25<sup class="super-text">E</sup>
-                                                    </h6>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0 red-text">
-                                                        -0.76%
-                                                    </h6>
-                                                    <p class="dark-red-text">-29.00</p>
-                                                </div>
-
-                                                <!-- Info -->
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0">ES1!</h6>
-                                                    <p class="small-text">E-Mini S&P</p>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mt-2">
-                                                        3762.25<sup class="super-text">E</sup>
-                                                    </h6>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0 red-text">
-                                                        -0.76%
-                                                    </h6>
-                                                    <p class="dark-red-text">-29.00</p>
-                                                </div>
-
-                                                <!-- Info -->
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0">ES1!</h6>
-                                                    <p class="small-text">E-Mini S&P</p>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mt-2">
-                                                        3762.25<sup class="super-text">E</sup>
-                                                    </h6>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0 red-text">
-                                                        -0.76%
-                                                    </h6>
-                                                    <p class="dark-red-text">-29.00</p>
-                                                </div>
-
-                                                <!-- Info -->
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0">ES1!</h6>
-                                                    <p class="small-text">E-Mini S&P</p>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mt-2">
-                                                        3762.25<sup class="super-text">E</sup>
-                                                    </h6>
-                                                </div>
-
-                                                <div class="col">
-                                                    <h6 class="fs-6 mb-0 red-text">
-                                                        -0.76%
-                                                    </h6>
-                                                    <p class="dark-red-text">-29.00</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Analytics -->
-                                <div class="col">
-                                    <div class="card h-100 light-blue-bg square-radius">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h5 class="card-title fs-5 mb-3">Analytics</h5>
-                                                <h6 class="card-title small-text mb-3">ES1</h6>
-                                            </div>
-
-                                            <!-- Chart -->
-                                            <div class="text-center mt-5">
-                                                <div id="chart" class="w-100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- IP Log -->
-                                <div class="col">
-                                    <div class="card h-100 light-blue-bg square-radius">
-                                        <div class="card-body">
-                                            <h5 class="card-title fs-5 mb-3">IP Log</h5>
-
-                                            <div class="d-flex justify-content-between mb-3">
-                                                <small class="small-text silver-text fst-italic">DATE/TIME</small>
-                                                <small class="small-text silver-text fst-italic">IP ADDRESS</small>
-                                            </div>
-
-                                            <div>
-                                                <!-- Item -->
-                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div>
-                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
-                                                            <small class="small-text yellow-text">
-                                                                22:26:05 GMT(+1)
-                                                            </small>
-                                                        </div>
-
-                                                        <h6 class="fs-6">103.217.111.167</h6>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Item -->
-                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div>
-                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
-                                                            <small class="small-text yellow-text">
-                                                                22:26:05 GMT(+1)
-                                                            </small>
-                                                        </div>
-
-                                                        <h6 class="fs-6">103.217.111.167</h6>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Item -->
-                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div>
-                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
-                                                            <small class="small-text yellow-text">
-                                                                22:26:05 GMT(+1)
-                                                            </small>
-                                                        </div>
-
-                                                        <h6 class="fs-6">103.217.111.167</h6>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Item -->
-                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div>
-                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
-                                                            <small class="small-text yellow-text">
-                                                                22:26:05 GMT(+1)
-                                                            </small>
-                                                        </div>
-
-                                                        <h6 class="fs-6">103.217.111.167</h6>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Item -->
-                                                <div class="more-light-blue-bg square-radius mb-2 p-2">
-                                                    <div class="d-flex justify-content-between ">
-                                                        <div>
-                                                            <h6 class="mb-0 small-text">2021-01-12</h6>
-                                                            <small class="small-text yellow-text">
-                                                                22:26:05 GMT(+1)
-                                                            </small>
-                                                        </div>
-
-                                                        <h6 class="fs-6">103.217.111.167</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class="fas fa-user-shield fs-6"></i>
+            <span class="logo_name fs-5 normal-font">Admin</span>
         </div>
-    </main>
+
+        <ul class="nav-links">
+            <li class="active">
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Category</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-calendar-event'></i>
+                        <span class="link_name">Events</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">All Events</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Add New Event</a></li>
+                    <li><a href="#">Event Single Settings</a></li>
+                    <li><a href="#">Event Attendance</a></li>
+                    <li><a href="#">Event Attendance Logs</a></li>
+                    <li><a href="#">Event Payment Logs</a></li>
+                    <li><a href="#">Payment Success Page Settings</a></li>
+                    <li><a href="#">Payment Cancel Page Settings</a></li>
+                    <li><a href="#">Attendance Report</a></li>
+                    <li><a href="#">Payment Log Report</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-news'></i>
+                        <span class="link_name">News</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">All News</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Add New Post</a></li>
+                    <li><a href="#">News Single Settings</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-notepad'></i>
+                        <span class="link_name">Pages</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">All Pages</a></li>
+                    <li><a href="#">Add New Page</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-certification'></i>
+                    <span class="link_name">Testimonial</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Testimonial</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="link_name">Appearance</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Topbar Settings</a></li>
+                    <li><a href="#">Menubar Settings</a></li>
+                    <li><a href="#">Media Images Manage</a></li>
+                    <li><a href="#">Home Variant</a></li>
+                    <li><a href="#">Widget Builder</a></li>
+                    <li><a href="#">Menu Manage</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-customize'></i>
+                        <span class="link_name">All Page Settings</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Home Page Manage</a></li>
+                    <li><a href="#">About Page Manage</a></li>
+                    <li><a href="#">Contact Page Manage</a></li>
+                    <li><a href="#">Contribution Page Manage</a></li>
+                    <li><a href="#">Event Page Manage</a></li>
+                    <li><a href="#">News Page Manage</a></li>
+                    <li><a href="#">404 Page Manage</a></li>
+                    <li><a href="#">Maintain Page Manage</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-share-alt'></i>
+                        <span class="link_name">General Settings</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Site Identity</a></li>
+                    <li><a href="#">Basic Settings</a></li>
+                    <li><a href="#">Color Settings</a></li>
+                    <li><a href="#">Typography Settings</a></li>
+                    <li><a href="#">SEO Settings</a></li>
+                    <li><a href="#">Third Party Scripts</a></li>
+                    <li><a href="#">Email Template</a></li>
+                    <li><a href="#">Email Settings</a></li>
+                    <li><a href="#">SMTP Settings</a></li>
+                    <li><a href="#">Page Settings</a></li>
+                    <li><a href="#">Payment Gateway Settings</a></li>
+                    <li><a href="#">Custom CSS</a></li>
+                    <li><a href="#">Custom JS</a></li>
+                    <li><a href="#">Licence Settings</a></li>
+                    <li><a href="#">Cache Settings</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">Languages</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Languages</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="main-content">
+            <!-- Navbar -->
+            <div class="upper-navbar pt-2 d-flex flex-column flex-sm-row justify-content-between">
+                <div class="d-flex d-flex flex-column flex-sm-row pt-2">
+                    <i class='bx bx-menu'></i>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control dropdown-toggle" placeholder="Search">
+                            <button class="input-group-text btn-primary" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="far fa-flag"></i> English
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">German</a></li>
+                                        <li><a class="dropdown-item" href="#">Italian</a></li>
+                                        <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                        <li><a class="dropdown-item" href="#">Russian</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="far fa-bell"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                                        <li><a class="dropdown-item" href="#">Notification 4</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Clear All</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-grip-horizontal"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Slack</a></li>
+                                        <li><a class="dropdown-item" href="#">Google</a></li>
+                                        <li><a class="dropdown-item" href="#">Facebook</a></li>
+                                        <li><a class="dropdown-item" href="#">Youtube</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fas fa-cog"></i>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <img class="img-fluid nav-profile-image rounded" src="images/profile.jpg"
+                                            alt="profile">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Dashboard -->
+            <section class="bg-light dashboard">
+                <div class="container">
+                    <div
+                        class="py-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row justify-content-between">
+                        <h5>Dashboard</h5>
+
+                        <form class="d-flex">
+                            <div class="input-group">
+                                <input type="date" class="form-control form-control-light">
+                                <span class="input-group-text bg-primary border-primary text-white">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-primary ms-1">
+                                <i class="fas fa-sync-alt"></i>
+                            </a>
+                            <a class="btn btn-primary ms-1">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </form>
+                    </div>
+
+                    <!-- First Part -->
+                    <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
+                        <div class="col">
+                            <div class="row row-cols-1 row-cols-md-4 g-4 pb-4">
+                                <!-- Box -->
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="card h-100 shadow">
+                                        <div class="card-body">
+                                            <small class="light-silver-text fw-lighter">Customers</small>
+                                            <h5 class="card-text pt-3 pb-2">36,254</h5>
+                                            <div
+                                                class="d-flex flex-sm-row flex-md-column flex-lg-row justify-content-between">
+                                                <small class="green-text"><i class="fas fa-arrow-alt-circle-up"></i>
+                                                    5.27%</small>
+
+                                                <small class="fw-lighter light-silver-text">Since last
+                                                    month</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Box -->
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="card h-100 shadow">
+                                        <div class="card-body">
+                                            <small class="light-silver-text fw-lighter">Orders</small>
+                                            <h5 class="card-text pt-3 pb-2">5,543</h5>
+                                            <div
+                                                class="d-flex flex-sm-row flex-md-column flex-lg-row justify-content-between">
+                                                <small class="red-text"><i class="fas fa-arrow-alt-circle-down"></i>
+                                                    1.08%</small>
+
+                                                <small class="fw-lighter light-silver-text">Since last
+                                                    month</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Box -->
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="card h-100 shadow">
+                                        <div class="card-body">
+                                            <small class="light-silver-text fw-lighter">Revenue</small>
+                                            <h5 class="card-text pt-3 pb-2">$6,254</h5>
+                                            <div
+                                                class="d-flex flex-sm-row flex-md-column flex-lg-row justify-content-between">
+                                                <small class="red-text"><i class="fas fa-arrow-alt-circle-down"></i>
+                                                    7.00%</small>
+
+                                                <small class="fw-lighter light-silver-text">Since last
+                                                    month</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Box -->
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="card h-100 shadow">
+                                        <div class="card-body">
+                                            <small class="light-silver-text fw-lighter">Growth</small>
+                                            <h5 class="card-text pt-3 pb-2">+ 30.56%</h5>
+                                            <div
+                                                class="d-flex flex-sm-row flex-md-column flex-lg-row justify-content-between">
+                                                <small class="green-text"><i class="fas fa-arrow-alt-circle-up"></i>
+                                                    4.87%</small>
+
+                                                <small class="fw-lighter light-silver-text">Since last
+                                                    month</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <div class="p-5"></div>
+                                    </h5>
+                                    <p class="card-text">
+                                    <div class="p-4"></div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Part -->
+                    <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
+                        <!-- Box -->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <div class="p-5"></div>
+                                    </h5>
+                                    <p class="card-text">
+                                    <div class="p-5"></div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <div class="p-5"></div>
+                                    </h5>
+                                    <p class="card-text">
+                                    <div class="p-5"></div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Part -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 pb-4">
+                        <!-- Box -->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <div class="p-5"></div>
+                                    </h5>
+                                    <p class="card-text">
+                                    <div class="p-5"></div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <div class="p-5"></div>
+                                    </h5>
+                                    <p class="card-text">
+                                    <div class="p-5"></div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <div class="p-5"></div>
+                                    </h5>
+                                    <p class="card-text">
+                                    <div class="p-5"></div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-light">
+                <nav class="container navbar navbar-expand-lg navbar-light">
+                    <div
+                        class="container-fluid top-border d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start">
+                        <div>
+                            <a class="navbar-brand" href="#">2021 © Admin - Dashboard</a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Support</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+    </section>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
 
     <!-- External Script -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/admin-overview.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
