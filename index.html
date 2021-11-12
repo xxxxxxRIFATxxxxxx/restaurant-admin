@@ -219,7 +219,7 @@
             <section class="bg-light dashboard text-dark">
                 <div class="container">
                     <div
-                        class="py-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row justify-content-between">
+                        class="py-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row justify-content-between align-items-center">
 
                         <div class="d-flex">
                             <h5>Dashboard</h5>
@@ -234,93 +234,38 @@
                         </div>
 
                         <form class="d-flex">
-                            <div class="input-group">
-                                <input type="date" class="form-control form-control-light">
-                                <span class="input-group-text bg-primary border-primary text-white">
-                                    <i class="fas fa-calendar-alt"></i>
-                                </span>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle p-3" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    <img class="img-fluid profile-picture me-2" src="images/021630312842.png"
+                                        alt="profile picture">
+                                    Sopnil Sohan
+                                </button>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </div>
-                            <a href="#" class="btn btn-primary ms-1">
-                                <i class="fas fa-sync-alt"></i>
-                            </a>
-                            <a class="btn btn-primary ms-1">
-                                <i class="fas fa-bars"></i>
-                            </a>
                         </form>
                     </div>
 
                     <!-- First Part -->
-                    <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-4">
+                        <!-- Box -->
                         <div class="col">
-                            <div class="row row-cols-1 row-cols-md-4 g-4 pb-4">
-                                <!-- Box -->
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                    <div class="card h-100 shadow">
-                                        <div class="card-body">
-                                            <small class="light-silver-text fw-lighter">Customers</small>
-                                            <h5 class="card-text pt-3 pb-2">36,254</h5>
-                                            <div
-                                                class="d-flex flex-sm-row flex-md-column flex-lg-row justify-content-between">
-                                                <small class="green-text"><i class="fas fa-arrow-alt-circle-up"></i>
-                                                    5.27%</small>
-
-                                                <small class="fw-lighter light-silver-text">Since last
-                                                    month</small>
-                                            </div>
+                            <div class="card h-100 shadow bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="row row-cols-2 g-0 mt-3">
+                                        <div class="col text-end">
+                                            <i class="fas fa-user-shield text-white fs-1 me-3"></i>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <!-- Box -->
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                    <div class="card h-100 shadow">
-                                        <div class="card-body">
-                                            <small class="light-silver-text fw-lighter">Orders</small>
-                                            <h5 class="card-text pt-3 pb-2">5,543</h5>
-                                            <div
-                                                class="d-flex flex-sm-row flex-md-column flex-lg-row justify-content-between">
-                                                <small class="red-text"><i class="fas fa-arrow-alt-circle-down"></i>
-                                                    1.08%</small>
-
-                                                <small class="fw-lighter light-silver-text">Since last
-                                                    month</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Box -->
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                    <div class="card h-100 shadow">
-                                        <div class="card-body">
-                                            <small class="light-silver-text fw-lighter">Revenue</small>
-                                            <h5 class="card-text pt-3 pb-2">$6,254</h5>
-                                            <div
-                                                class="d-flex flex-sm-row flex-md-column flex-lg-row justify-content-between">
-                                                <small class="red-text"><i class="fas fa-arrow-alt-circle-down"></i>
-                                                    7.00%</small>
-
-                                                <small class="fw-lighter light-silver-text">Since last
-                                                    month</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Box -->
-                                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                                    <div class="card h-100 shadow">
-                                        <div class="card-body">
-                                            <small class="light-silver-text fw-lighter">Growth</small>
-                                            <h5 class="card-text pt-3 pb-2">+ 30.56%</h5>
-                                            <div
-                                                class="d-flex flex-sm-row flex-md-column flex-lg-row justify-content-between">
-                                                <small class="green-text"><i class="fas fa-arrow-alt-circle-up"></i>
-                                                    4.87%</small>
-
-                                                <small class="fw-lighter light-silver-text">Since last
-                                                    month</small>
-                                            </div>
+                                        <div class="col">
+                                            <h2 class="mb-0 fs-3">5</h2>
+                                            <span class="small-text">Total Admin</span>
                                         </div>
                                     </div>
                                 </div>
@@ -329,125 +274,204 @@
 
                         <!-- Box -->
                         <div class="col">
-                            <div class="card h-100 shadow">
+                            <div class="card h-100 shadow bg-primary text-white">
                                 <div class="card-body">
-                                    <h5 class="card-title">
-                                        <div class="p-5"></div>
-                                    </h5>
-                                    <p class="card-text">
-                                    <div class="p-4"></div>
-                                    </p>
+                                    <div class="row row-cols-2 g-0 mt-3">
+                                        <div class="col text-end">
+                                            <i class="fas fa-users text-white fs-1 me-3"></i>
+                                        </div>
+
+                                        <div class="col">
+                                            <h2 class="mb-0 fs-3">3</h2>
+                                            <span class="small-text">Total User</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col">
+                            <div class="card h-100 shadow bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="row row-cols-2 g-0 mt-3">
+                                        <div class="col text-end">
+                                            <i class="fas fa-archive text-white fs-1 me-3"></i>
+                                        </div>
+
+                                        <div class="col">
+                                            <h2 class="mb-0 fs-3">15</h2>
+                                            <span class="small-text">Total Donation Log</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col">
+                            <div class="card h-100 shadow bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="row row-cols-2 g-0 mt-3">
+                                        <div class="col text-end">
+                                            <i class="fas fa-archive text-white fs-1 me-3"></i>
+                                        </div>
+
+                                        <div class="col">
+                                            <h2 class="mb-0 fs-3">13</h2>
+                                            <span class="small-text">Total Event</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col">
+                            <div class="card h-100 shadow bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="row row-cols-2 g-0 mt-3">
+                                        <div class="col text-end">
+                                            <i class="fas fa-blog text-white fs-1 me-3"></i>
+                                        </div>
+
+                                        <div class="col">
+                                            <h2 class="mb-0 fs-3">13</h2>
+                                            <span class="small-text">Total Blogs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Box -->
+                        <div class="col">
+                            <div class="card h-100 shadow bg-primary text-white">
+                                <div class="card-body">
+                                    <div class="row row-cols-2 g-0 mt-3">
+                                        <div class="col text-end">
+                                            <i class="fas fa-comments text-white fs-1 me-3"></i>
+                                        </div>
+
+                                        <div class="col">
+                                            <h2 class="mb-0 fs-3">9</h2>
+                                            <span class="small-text">Total Testimonial</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Second Part -->
-                    <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
+                    <!-- Table Part -->
+                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4 pb-4">
                         <!-- Box -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                        <div class="col">
                             <div class="card h-100 shadow">
                                 <div class="card-body">
-                                    <h5 class="card-title">
-                                        <div class="p-5"></div>
-                                    </h5>
-                                    <p class="card-text">
-                                    <div class="p-5"></div>
-                                    </p>
+                                    <h5 class="mb-4">Recent Donation Logs</h5>
+
+                                    <div style="overflow-x:auto;">
+                                        <table>
+                                            <tr>
+                                                <th>Donation ID</th>
+                                                <th>Amount</th>
+                                                <th>Payment Gateway</th>
+                                                <th>Payment Status</th>
+                                                <th>Date</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>#57</td>
+                                                <td>15$</td>
+                                                <td>paytm</td>
+                                                <td>
+                                                    <div class="bg-light yellow-border p-2">
+                                                        pending
+                                                    </div>
+                                                </td>
+                                                <td>04 Nov 2021 06:28:04</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>#57</td>
+                                                <td>15$</td>
+                                                <td>paytm</td>
+                                                <td>
+                                                    <div class="bg-light yellow-border p-2">
+                                                        pending
+                                                    </div>
+                                                </td>
+                                                <td>04 Nov 2021 06:28:04</td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Box -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="col">
                             <div class="card h-100 shadow">
                                 <div class="card-body">
-                                    <h5 class="card-title">
-                                        <div class="p-5"></div>
-                                    </h5>
-                                    <p class="card-text">
-                                    <div class="p-5"></div>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                    <h5 class="mb-4">Recent Event Attendance Booking</h5>
 
-                    <!-- Third Part -->
-                    <div class="row row-cols-1 row-cols-md-3 g-4 pb-4">
-                        <!-- Box -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="card h-100 shadow">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <div class="p-5"></div>
-                                    </h5>
-                                    <p class="card-text">
-                                    <div class="p-5"></div>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                                    <div style="overflow-x:auto;">
+                                        <table>
+                                            <tr>
+                                                <th>Donation ID</th>
+                                                <th>Amount</th>
+                                                <th>Payment Status</th>
+                                                <th>Date</th>
+                                            </tr>
 
-                        <!-- Box -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                            <div class="card h-100 shadow">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <div class="p-5"></div>
-                                    </h5>
-                                    <p class="card-text">
-                                    <div class="p-5"></div>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                                            <tr>
+                                                <td>#57</td>
+                                                <td>15$</td>
+                                                <td>
+                                                    <div class="bg-light green-border p-2">
+                                                        pending
+                                                    </div>
+                                                </td>
+                                                <td>04 Nov 2021 06:28:04</td>
+                                            </tr>
 
-                        <!-- Box -->
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
-                            <div class="card h-100 shadow">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <div class="p-5"></div>
-                                    </h5>
-                                    <p class="card-text">
-                                    <div class="p-5"></div>
-                                    </p>
+                                            <tr>
+                                                <td>#57</td>
+                                                <td>15$</td>
+                                                <td>
+                                                    <div class="bg-light green-border p-2">
+                                                        pending
+                                                    </div>
+                                                </td>
+                                                <td>04 Nov 2021 06:28:04</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>#57</td>
+                                                <td>15$</td>
+                                                <td>
+                                                    <div class="bg-light green-border p-2">
+                                                        pending
+                                                    </div>
+                                                </td>
+                                                <td>04 Nov 2021 06:28:04</td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <!-- Footer -->
-            <footer class="bg-light">
-                <nav class="container navbar navbar-expand-lg navbar-light">
-                    <div
-                        class="container-fluid top-border d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-start">
-                        <div>
-                            <a class="navbar-brand" href="#">2021 © Admin - Dashboard</a>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Support</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </footer>
         </div>
+
+        <!-- Footer -->
+        <footer class="mx-3 py-3 d-flex justify-content-between">
+            <p class="text-muted small-text">© 2021 All right reserved by Restaurant Admin</p>
+            <p class="text-muted small-text">V-1.0.0</p>
+        </footer>
     </section>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
