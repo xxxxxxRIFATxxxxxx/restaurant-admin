@@ -184,9 +184,9 @@
                                 </button>
 
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">Password Change</a></li>
-                                    <li><button class="dropdown-item" href="#">Logout</button></li>
+                                    <li><a class="dropdown-item" href="edit-profile.html">Edit Profile</a></li>
+                                    <li><a class="dropdown-item" href="password-change.html">Password Change</a></li>
+                                    <li><button class="dropdown-item">Logout</button></li>
                                 </ul>
                             </div>
                         </form>
@@ -237,19 +237,23 @@
                                                 <td>
                                                     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 g-2 mb-2">
                                                         <div class="col">
-                                                            <button class="btn btn-sm btn-info text-white w-100">
+                                                            <button data-bs-toggle="modal"
+                                                                data-bs-target="#editAllWordModal"
+                                                                class="btn btn-sm btn-info text-white w-100">
                                                                 Edit All Word
                                                             </button>
                                                         </div>
 
                                                         <div class="col">
-                                                            <button class="btn btn-sm btn-primary w-100">
+                                                            <button data-bs-toggle="modal" data-bs-target="#editModal"
+                                                                class="btn btn-sm btn-primary w-100">
                                                                 <i class="fas fa-pen-fancy text-white"></i>
                                                             </button>
                                                         </div>
 
                                                         <div class="col">
-                                                            <button class="btn btn-sm btn-primary w-100">
+                                                            <button data-bs-toggle="modal" data-bs-target="#copyModal"
+                                                                class="btn btn-sm btn-primary w-100">
                                                                 <i class="fas fa-copy text-white"></i>
                                                             </button>
                                                         </div>
@@ -270,37 +274,293 @@
                                                     publish
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-warning">Make Change</button>
+                                                    <button data-bs-toggle="modal" data-bs-target="#changeModal"
+                                                        class="btn btn-sm text-white btn-warning">
+                                                        Make Change
+                                                    </button>
                                                 </td>
 
                                                 <td>
                                                     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 g-2 mb-2">
                                                         <div class="col">
-                                                            <button class="btn btn-sm btn-info text-white w-100">
+                                                            <button data-bs-toggle="modal"
+                                                                data-bs-target="#editAllWordModal"
+                                                                class="btn btn-sm btn-info text-white w-100">
                                                                 Edit All Word
                                                             </button>
                                                         </div>
 
                                                         <div class="col">
-                                                            <button class="btn btn-sm btn-danger w-100">
+                                                            <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                                class="btn btn-sm btn-danger w-100">
                                                                 <i class="fas fa-trash text-white"></i>
                                                             </button>
                                                         </div>
 
                                                         <div class="col">
-                                                            <button class="btn btn-sm btn-primary w-100">
+                                                            <button data-bs-toggle="modal" data-bs-target="#editModal"
+                                                                class="btn btn-sm btn-primary w-100">
                                                                 <i class="fas fa-pen-fancy text-white"></i>
                                                             </button>
                                                         </div>
 
                                                         <div class="col">
-                                                            <button class="btn btn-sm btn-primary w-100">
+                                                            <button data-bs-toggle="modal" data-bs-target="#copyModal"
+                                                                class="btn btn-sm btn-primary w-100">
                                                                 <i class="fas fa-copy text-white"></i>
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
+
+                                            <!-- Delete Modal -->
+                                            <div class="modal fade" id="deleteModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+
+                                                        <div class="modal-body text-center">
+                                                            <h4>Are you sure?</h4>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Yes, delete it!
+                                                            </button>
+
+                                                            <button type="button" class="btn btn-danger"
+                                                                data-bs-dismiss="modal">
+                                                                Cancel
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Change Modal -->
+                                            <div class="modal fade" id="changeModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+
+                                                        <div class="modal-body text-center">
+                                                            <h4>
+                                                                Are you sure to make this language as a default
+                                                                language?
+                                                            </h4>
+
+                                                            <p class="text-muted small-text">
+                                                                Languages ​​will be turn changed as default
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Yes, Change it!
+                                                            </button>
+
+                                                            <button type="button" class="btn btn-danger"
+                                                                data-bs-dismiss="modal">
+                                                                Cancel
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Edit All Word Modal -->
+                                            <div class="modal fade" id="editAllWordModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+
+                                                        <div class="modal-body text-center">
+                                                            <h4>
+                                                                Are you sure you want to edit all word?
+                                                            </h4>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Yes, Edit it!
+                                                            </button>
+
+                                                            <button type="button" class="btn btn-danger"
+                                                                data-bs-dismiss="modal">
+                                                                Cancel
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Copy Modal -->
+                                            <div class="modal fade" id="copyModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h6>Clone To New Languages</h6>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <p class="my-2 small-text text-muted bg-light p-3">
+
+                                                                it will copy all content of all static sections, header
+                                                                slider, key features, contact info, support info, pages,
+                                                                menus
+                                                            </p>
+
+                                                            <form>
+                                                                <div class="mb-3">
+                                                                    <label class="form-label text-muted small-text">
+                                                                        Language
+                                                                    </label>
+
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>English</option>
+                                                                        <option value="arabic">Arabic</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label text-muted small-text">
+                                                                        Direction
+                                                                    </label>
+
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>LTR</option>
+                                                                        <option value="arabic">RTL</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label text-muted small-text">
+                                                                        Status
+                                                                    </label>
+
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>Public</option>
+                                                                        <option value="arabic">Draft</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label text-muted small-text">
+                                                                        Slug
+                                                                    </label>
+
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="SLUG">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Submit
+                                                            </button>
+
+                                                            <button type="button" class="btn btn-danger"
+                                                                data-bs-dismiss="modal">
+                                                                Cancel
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Edit Modal -->
+                                            <div class="modal fade" id="editModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h6>Edit Languages</h6>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <div class="mb-3">
+                                                                    <label class="form-label text-muted small-text">
+                                                                        Language
+                                                                    </label>
+
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>English</option>
+                                                                        <option value="arabic">Arabic</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label text-muted small-text">
+                                                                        Direction
+                                                                    </label>
+
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>LTR</option>
+                                                                        <option value="arabic">RTL</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label text-muted small-text">
+                                                                        Status
+                                                                    </label>
+
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected>Public</option>
+                                                                        <option value="arabic">Draft</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label text-muted small-text">
+                                                                        Slug
+                                                                    </label>
+
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="SLUG">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Submit
+                                                            </button>
+
+                                                            <button type="button" class="btn btn-danger"
+                                                                data-bs-dismiss="modal">
+                                                                Cancel
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </table>
                                     </div>
                                 </div>
