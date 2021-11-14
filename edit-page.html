@@ -162,13 +162,13 @@
                         class="py-4 d-flex flex-column flex-sm-column flex-md-column flex-lg-row justify-content-between align-items-center">
 
                         <div class="d-flex">
-                            <h5>Home Variant Settings</h5>
+                            <h5>Edit Page</h5>
 
                             <div class="ms-5">
                                 <a class="text-decoration-none" href="index.html">
                                     <span class="text-primary small-text">Home</span>
                                 </a>
-                                <span class="text-muted small-text">/ Home Variant Settings</span>
+                                <span class="text-muted small-text">/ Edit Page</span>
                             </div>
 
                         </div>
@@ -201,44 +201,134 @@
                                     <div
                                         class="d-flex my-3 flex-column flex-lg-row align-items-center justify-content-between">
 
-                                        <h5 class="mb-4">Home Variant</h5>
-                                    </div>
-
-                                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-4 g-4">
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/frontend/home-variant/home-01.png"
-                                                    alt="">
-                                            </div>
+                                        <div class="d-flex my-2 w-100 me-3">
+                                            <h5 class="mb-4">Edit Page</h5>
                                         </div>
 
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/frontend/home-variant/home-02.png"
-                                                    alt="">
-                                            </div>
-                                        </div>
+                                        <div class="d-flex my-2 w-100">
+                                            <select class="form-select me-2 w-100" aria-label="Default select example">
+                                                <option selected>English (UK)</option>
+                                                <option value="arabic">Arabic</option>
+                                            </select>
 
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/frontend/home-variant/home-03.png"
-                                                    alt="">
-                                            </div>
-                                        </div>
-
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/frontend/home-variant/home-04.png"
-                                                    alt="">
-                                            </div>
+                                            <a href="all-pages.html" class="btn btn-primary small-text w-100">
+                                                All Blog Post
+                                            </a>
                                         </div>
                                     </div>
 
-                                    <button class="btn btn-primary mt-4">Update Home Variant</button>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label text-muted">
+                                                Title
+                                            </label>
+                                            <input placeholder="Title" type="text" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label text-muted">
+                                                Slug
+                                            </label>
+                                            <input placeholder="Slug" type="text" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label text-muted">
+                                                Page Content
+                                            </label>
+
+                                            <textarea class="form-control" cols="30" rows="10"></textarea>
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted">
+                                                        Meta Title
+                                                    </label>
+                                                    <input placeholder="Meta Title" type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted">
+                                                        Og Meta Title
+                                                    </label>
+                                                    <input placeholder="Og Meta Title" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted">
+                                                        Meta Description
+                                                    </label>
+
+                                                    <textarea class="form-control" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted">
+                                                        Og Meta Description
+                                                    </label>
+
+                                                    <textarea class="form-control" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted">
+                                                        Meta Tags
+                                                    </label>
+                                                    <input placeholder="Meta Tags" type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="form-label text-muted">
+                                                        OG Meta Image
+                                                    </label>
+
+                                                    <input type="file" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label text-muted">
+                                                Visibility
+                                            </label>
+
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>All</option>
+                                                <option value="loggedIn">Only Logged In User</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label text-muted">
+                                                Status
+                                            </label>
+
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Publish</option>
+                                                <option value="draft">Draft</option>
+                                            </select>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">
+                                            Update
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

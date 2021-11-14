@@ -146,14 +146,12 @@
                 </div>
 
                 <div class="d-flex align-items-center pe-2 me-1">
-                    <div class="form-check form-switch switch-btn me-3">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                    </div>
 
-                    <button class="btn btn-primary d-flex align-items-center py-2">
+
+                    <a href="index.html" class="btn btn-primary d-flex align-items-center py-2">
                         <i class='bx bx-log-in me-2 hide'></i>
                         <small>View Site</small>
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -278,80 +276,65 @@
                                                 <td>
                                                     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-2 mb-2">
                                                         <div class="col">
-                                                            <button class="btn btn-danger w-100">
+                                                            <button class="btn btn-danger w-100" data-bs-toggle="modal"
+                                                                data-bs-target="#deleteModal">
                                                                 <i class="fas fa-trash text-white"></i>
                                                             </button>
                                                         </div>
 
                                                         <div class="col">
-                                                            <button class="btn btn-info w-100">
+                                                            <a href="index.html" class="btn btn-info w-100">
                                                                 <i class="far fa-eye text-white"></i>
-                                                            </button>
+                                                            </a>
                                                         </div>
                                                     </div>
 
                                                     <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-2">
                                                         <div class="col">
-                                                            <button class="btn btn-primary w-100">
+                                                            <a href="edit-news.html" class="btn btn-primary w-100">
                                                                 <i class="fas fa-pen-fancy text-white"></i>
-                                                            </button>
+                                                            </a>
                                                         </div>
 
                                                         <div class="col">
-                                                            <button class="btn btn-secondary w-100">
+                                                            <a href="all-news.html" class="btn btn-secondary w-100">
                                                                 <i class="far fa-file text-white"></i>
-                                                            </button>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
 
-                                            <tr>
-                                                <td>11</td>
-                                                <td>Voter Registration</td>
-                                                <td>
-                                                    <img class="img-fluid table-img" src="images/table-pic.png"
-                                                        alt="table picture">
-                                                </td>
-                                                <td>Sohan</td>
-                                                <td>Development</td>
-                                                <td>
-                                                    <div class="bg-light green-border p-2">
-                                                        Publish
-                                                    </div>
-                                                </td>
-                                                <td>23-Aug-2021</td>
-
-                                                <td>
-                                                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-2 mb-2">
-                                                        <div class="col">
-                                                            <button class="btn btn-danger w-100">
-                                                                <i class="fas fa-trash text-white"></i>
-                                                            </button>
+                                            <!-- Delete Modal -->
+                                            <div class="modal fade" id="deleteModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
 
-                                                        <div class="col">
-                                                            <button class="btn btn-info w-100">
-                                                                <i class="far fa-eye text-white"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-2">
-                                                        <div class="col">
-                                                            <button class="btn btn-primary w-100">
-                                                                <i class="fas fa-pen-fancy text-white"></i>
-                                                            </button>
+                                                        <div class="modal-body text-center">
+                                                            <h4>Are you sure?</h4>
+                                                            <p class="small-text text-muted">
+                                                                It will delete all language data !
+                                                            </p>
                                                         </div>
 
-                                                        <div class="col">
-                                                            <button class="btn btn-secondary w-100">
-                                                                <i class="far fa-file text-white"></i>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary">
+                                                                Yes, delete it!
+                                                            </button>
+
+                                                            <button type="button" class="btn btn-danger"
+                                                                data-bs-dismiss="modal">
+                                                                Cancel
                                                             </button>
                                                         </div>
                                                     </div>
-                                                </td>
-                                            </tr>
+                                                </div>
+                                            </div>
                                         </table>
                                     </div>
 
