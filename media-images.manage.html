@@ -204,7 +204,26 @@
                                         <h5 class="mb-4">Media Images</h5>
 
                                         <div>
-                                            <button class="btn btn-primary">Add New Image</button>
+                                            <button data-bs-toggle="modal" data-bs-target="#addImageModal"
+                                                class="btn btn-primary">Add New Image</button>
+                                        </div>
+
+                                        <!-- Add New Image Modal -->
+                                        <div class="modal fade" id="addImageModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h6>Add New Image</h6>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body text-center">
+                                                        <input type="file" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -215,7 +234,17 @@
                                                     src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
                                                     alt="">
 
-                                                <button>Delete</button>
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -224,14 +253,18 @@
                                                 <img class="img-fluid"
                                                     src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-011631167177.jpeg"
                                                     alt="">
-                                            </div>
-                                        </div>
 
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/news-81631161598.png"
-                                                    alt="">
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -240,46 +273,18 @@
                                                 <img class="img-fluid"
                                                     src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
                                                     alt="">
-                                            </div>
-                                        </div>
 
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-011631167177.jpeg"
-                                                    alt="">
-                                            </div>
-                                        </div>
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
 
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/news-81631161598.png"
-                                                    alt="">
-                                            </div>
-                                        </div>
-
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-011631167177.jpeg"
-                                                    alt="">
-                                            </div>
-                                        </div>
-
-                                        <div class="col">
-                                            <div class="card h-100 bg-secondary">
-                                                <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/news-81631161598.png"
-                                                    alt="">
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -288,6 +293,18 @@
                                                 <img class="img-fluid"
                                                     src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
                                                     alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -296,14 +313,205 @@
                                                 <img class="img-fluid"
                                                     src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-011631167177.jpeg"
                                                     alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <div class="col">
                                             <div class="card h-100 bg-secondary">
                                                 <img class="img-fluid"
-                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/news-81631161598.png"
+                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
                                                     alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card h-100 bg-secondary">
+                                                <img class="img-fluid"
+                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
+                                                    alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card h-100 bg-secondary">
+                                                <img class="img-fluid"
+                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-011631167177.jpeg"
+                                                    alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card h-100 bg-secondary">
+                                                <img class="img-fluid"
+                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
+                                                    alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card h-100 bg-secondary">
+                                                <img class="img-fluid"
+                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
+                                                    alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card h-100 bg-secondary">
+                                                <img class="img-fluid"
+                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-011631167177.jpeg"
+                                                    alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card h-100 bg-secondary">
+                                                <img class="img-fluid"
+                                                    src="https://bytesed.com/laravel/harnold/assets/uploads/media-uploader/volunteer-021631167179.jpeg"
+                                                    alt="">
+
+                                                <div class="d-flex">
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                        class="btn btn-danger w-100">
+                                                        <i class="fas fa-trash text-white"></i>
+                                                    </button>
+
+                                                    <button data-bs-toggle="modal" data-bs-target="#applyModal"
+                                                        class="btn btn-success w-100">
+                                                        <i class="fas fa-check text-white"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Delete Modal -->
+                                    <div class="modal fade" id="deleteModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body text-center">
+                                                    <h4>Are you sure?</h4>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary">
+                                                        Yes, delete it!
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-danger"
+                                                        data-bs-dismiss="modal">
+                                                        Cancel
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Apply Modal -->
+                                    <div class="modal fade" id="applyModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body text-center">
+                                                    <div class="alert alert-success">
+                                                        Image applied successfully
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
