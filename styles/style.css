@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.more-radious {
+  border-radius: 25px;
+}
+
 .normal-font {
   font-weight: lighter !important;
 }
