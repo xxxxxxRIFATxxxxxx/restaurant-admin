@@ -1,12 +1,3 @@
-// For Sidebar
-// let arrow = document.querySelectorAll(".arrow");
-// for (var i = 0; i < arrow.length; i++) {
-//     arrow[i].addEventListener("click", (e) => {
-//         let arrowParent = e.target.parentElement.parentElement;
-//         arrowParent.classList.toggle("showMenu");
-//     });
-// };
-
 // For Toggle Dropdown
 let dropItems = document.querySelectorAll(".drop-item");
 for (var i = 0; i < dropItems.length; i++) {
@@ -32,8 +23,26 @@ for (var i = 0; i < dropItems.length; i++) {
     });
 };
 
+// For Side Bar
 let sidebar = document.querySelector(".sidebar");
 let sidebarBtn = document.querySelector(".bx-menu");
 sidebarBtn.addEventListener("click", () => {
     sidebar.classList.toggle("close");
 });
+
+// For all words change
+const allWordsList = ["Welcome to LA SCALA", "READY TO BE OPENED", " RESERVATION", "Discover", "OUR STORY", "OUR STORY Description", "FRANK REYES", "Master Chef", "Amazing Delicious", "Steak Fingers & Gravy", "Special Cocktails", "Bean Salad", "Amazing Delicious Description", "Book A Table", "Discover", "OUR MENU", "Starter", "Lunch", "Dinner", "Dessert", "Alcoholic", "Drinks", "View More", "BEST PLACE OF CULINARY", "OUR GALLERY", "Reservation", "BOOK A TABLE", "Book a table details", "LA SCALA Description", "RECENT POSTS", "Egestas Fringilla Phasellus", "Arcu Cursus Euismod Quis", "Magna Etiam Tempor Viverra", "Varius Sit Amet Mattis", "GALLERY", "CONTACT INFO", "Reon, 1535 Broadway, New York", "+1 888-999-3333", "Contact@example.com", "Lunch", "Everyday", "Dinner: Mon- Thu", "18:00-21:30", "Dinner: Fri- Sun", "19:00-21:00", "Copyright @ 2019 Reon. Get The Theme", "The Menu", "The Menu Details", "SALAD", "CURRY", "POTATO", "ONION AND NUTMEG SALAD........$12", "ur 100% grass-fed hand-cut top sirloin is seared to lock in the juices.", "VINEGAR AND PRUNE SALAD........$12", "Pork and fresh potato combined into chunky make it good.", "CHERVIL AND GUAVA SALAD........$12", "A crisp salad featuring chervil and fresh guava pork and fresh potato.", "GOAT AND MINT SALAD........$22", "Goat and dried mint served on a bed of lettuce. pork and fresh potato.", "STEAKHOUSE SIRLOIN........$25", "Our 100% grass-fed hand-cut top sirloin is seared to lock in the juices.", "SKINNY CARNIVORE........$12", "Genoa salami, smoked prosciutto, barrel-aged Sriracha, bocconcini.", "MEAT", "SUSHI", "TURKEY", "STEAK", "SOUP", "FISH", "About Us", "About Us Details", "Our Story Details", "About Us Details 2", "OUR STAFF", "Andrew Austin", "Chef", "Tom Anderson", "Staff", "Emma Johnson", "TESTIMONIALS", "Reviews", "Lunch 12:00 - 14:00", "Everyday", "Dinner 19:00 - 21:00", "Monday – Thursday", "Dinner 18:00 - 21:30", "Friday – Sunday", "Our Team", "Our Team Text", "Our Events", "Our Events Details", ""];
+
+let allWordsChangeContainer = document.getElementById("all-words-field-container");
+
+allWordsList.map(word => {
+    let div = document.createElement("div");
+    div.classList.add("col");
+    div.innerHTML = `<label class="form-label">
+                ${word}
+            </label>
+
+            <input type="text" class="form-control text-dark" value="${word}">`;
+
+    allWordsChangeContainer.appendChild(div);
+})
